@@ -21,7 +21,6 @@ resource "aws_instance" "aws-20250621" {
     Name = "aws-20250621"
     UserDate = "true"
   }
-  # user_data_base64 = "IyEvdXNyL2Jpbi9lbnYgYmFzaApzZXQgLUNldXgKc2V0IC1vIHBpcGVmYWlsCgp3Z2V0IGh0dHBzOi8vZ2l0aHViLmNvbS90YWt1bWEtc2hpc2hpZG8ua2V5cyAtbyAvaG9tZS91YnVudHUvLnNzaC9hdXRob3JpemVkX2tleXMKY2htb2QgNjAwIC9ob21lL3VidW50dS8uc3NoL2F1dGhvcml6ZWRfa2V5cw=="
 
   key_name = var.key_name
 }
