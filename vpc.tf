@@ -21,7 +21,7 @@ resource "aws_vpc_security_group_egress_rule" "ssh_enable" {
   to_port     = 22
 }
 
-resource "aws_vpc_security_group_ingress_rule" "ssh_enable" {
+resource "aws_vpc_security_group_ingress_rule" "any" {
   security_group_id = aws_security_group.ssh_enable.id
 
   cidr_ipv4   = "0.0.0.0/0"

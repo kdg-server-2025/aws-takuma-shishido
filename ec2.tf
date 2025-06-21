@@ -17,10 +17,10 @@ resource "aws_instance" "aws-20250621" {
 
   vpc_security_group_ids = [aws_security_group.ssh_enable.id]
 
+  key_name = aws_key_pair.keypair.id
+
   tags = {
     Name = "aws-20250621"
     UserDate = "true"
   }
-
-  key_name = var.key_name
 }
