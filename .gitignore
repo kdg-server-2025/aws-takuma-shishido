@@ -1,5 +1,5 @@
-.DS_Store
 .terraform/*
+.temp_files/
 
+.DS_Store
 vars.tfvars
-
