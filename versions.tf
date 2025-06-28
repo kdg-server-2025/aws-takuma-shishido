@@ -1,5 +1,5 @@
 terraform {
-  required_version = "1.12.1"
+  required_version = "1.12.2"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -8,14 +8,14 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "kdg-aws-2025-takuma-shishido"
-    key            = "tfstate/aws.tfstate"
-    region         = "ap-northeast-1"
-    encrypt        = true
+    bucket  = "kdg-aws-2025-takuma-shishido"
+    key     = "tfstate/aws.tfstate"
+    region  = "ap-northeast-1"
+    encrypt = true
   }
 }
 
 provider "aws" {
-  region  = "ap-northeast-1"
+  region = "ap-northeast-1"
 }
 
